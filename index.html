@@ -10,29 +10,36 @@
     <script src="js/global.js"></script>
     <script src="js/qrious.min.js"></script>
 
+    <style>
+	code {
+		display: block;
+	}
+
+	@media print {
+		textarea {
+			display: none;
+		}
+	}
+    </style>
+
   </head>
   <body>
       <h1><a href="index.html">Seedback</a></h1>
       <h3>A seed or backup tool QR generating site for a paper printout.</h3>
 
-      <textarea rows="9" cols="51" onInput="generateQr(event,'qr1')"></textarea>
-      <canvas id="qr1"></canvas>
-      </br>
+      <textarea rows="9" cols="51" onInput="generateQr(event)"></textarea>
+      <canvas></canvas><code></code>
 
-      <textarea rows="9" cols="51" onInput="generateQr(event,'qr2')"></textarea>
-      <canvas id="qr2"></canvas>
-      </br>
+      <textarea rows="9" cols="51" onInput="generateQr(event)"></textarea>
+      <canvas></canvas><code></code>
 
-      <textarea rows="9" cols="51" onInput="generateQr(event,'qr3')"></textarea>
-      <canvas id="qr3"></canvas>
-      </br>
+      <textarea rows="9" cols="51" onInput="generateQr(event)"></textarea>
+      <canvas></canvas><code></code>
 
-      <textarea rows="9" cols="51" onInput="generateQr(event,'qr4')"></textarea>
-      <canvas id="qr4"></canvas>
-      </br>
+      <textarea rows="9" cols="51" onInput="generateQr(event)"></textarea>
+      <canvas></canvas><code></code>
 
-      <textarea rows="9" cols="51" onInput="generateQr(event,'qr5')"></textarea>
-      <canvas id="qr5"></canvas>
-      </br>
+      <textarea rows="9" cols="51" onInput="generateQr(event)"></textarea>
+      <canvas></canvas><code></code>
   </body>
 </html>
