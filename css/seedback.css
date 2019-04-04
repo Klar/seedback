@@ -1,3 +1,13 @@
 a {
   color: Black;
 }
+
+code {
+  display: block;
+}
+
+@media print {
+  textarea {
+    display: none;
+  }
+}

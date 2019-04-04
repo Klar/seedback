@@ -7,25 +7,14 @@
     <!-- Custom styles for this template -->
     <link href="css/seedback.css" rel="stylesheet">
 
-    <script src="js/global.js"></script>
-    <script src="js/qrious.min.js"></script>
-
-    <style>
-	code {
-		display: block;
-	}
-
-	@media print {
-		textarea {
-			display: none;
-		}
-	}
-    </style>
-
   </head>
   <body>
       <h1><a href="index.html">Seedback</a></h1>
-      <h3>A seed or backup tool QR generating site for a paper printout.</h3>
+      <h3>A seed or backup tool QR image generating site for a paper printout.</h3>
+
+      <input id='password' type='password' placeholder='encryption key' size='35'>
+      <button onclick="setEncryption(this);return false;">Set</button>
+      </br>
 
       <textarea rows="9" cols="51" onInput="generateQr(event)"></textarea>
       <canvas></canvas><code></code>
@@ -41,5 +30,9 @@
 
       <textarea rows="9" cols="51" onInput="generateQr(event)"></textarea>
       <canvas></canvas><code></code>
+
+      <script src="js/aes.js"></script>
+      <script src="js/global.js"></script>
+      <script src="js/qrious.min.js"></script>
   </body>
 </html>
