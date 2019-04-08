@@ -4,10 +4,11 @@ a {
 
 code {
   display: block;
+  overflow-wrap: break-word;
 }
 
 @media print {
-  textarea {
+  h3, nav, input, button, textarea {
     display: none;
   }
 }
