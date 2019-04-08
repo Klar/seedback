@@ -6,17 +6,17 @@ function setEncryption(){
   localStorage['aeskey'] = document.getElementById("password").value;
 };
 
-function aes_encrypt(data){
+function aesEncrypt(data){
   return CryptoJS.AES.encrypt(data, localStorage['aeskey']).toString();
 };
 
-function aes_decrypt(data){
+function aesDecrypt(data){
   return CryptoJS.AES.decrypt(data, localStorage['aeskey']).toString(CryptoJS.enc.Utf8);
 };
 
 function generateQr(event) {
   if (localStorage.getItem("aeskey") !== null) {
-    valuetext = aes_encrypt(event.target.value);
+    valuetext = aesEncrypt(event.target.value);
   } else {
     valuetext = event.target.value;
   };
@@ -30,4 +30,10 @@ function generateQr(event) {
 
   var codeBlock = canvas.nextElementSibling
   codeBlock.innerText = valuetext;
+};
+
+function decryptText(event){
+  data = event.target.value;
+  decrypted = aesDecrypt(data);
+  event.target.nextElementSibling.innerText = decrypted;
 };
