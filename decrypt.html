@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>seedback - decrypt</title>
+
+    <!-- Custom styles for this template -->
+    <link href="css/seedback.css" rel="stylesheet">
+
+  </head>
+  <body>
+      <h1><a href="index.html">Seedback</a></h1>
+      <h3>A seed or backup tool QR image generating site for a paper printout.</h3>
+      <nav>
+        <ul>
+          <li><h4><a href="index.html">encrypt</a></h4></li>
+          <li><h4><a href="decrypt.html">decrypt</a></li>
+        </ul>
+      </nav>
+
+      <input id='password' type='password' placeholder='encryption key is not set' size='35'>
+      <button onclick="setEncryption(this);return false;">Set</button>
+      </br>
+
+      <h3 id="decrypt">decrypt</h3>
+      <textarea rows="9" cols="51" onInput="decryptText(event)"></textarea>
+      <code></code>
+
+      <script src="js/aes.js"></script>
+      <script src="js/global.js"></script>
+      <script src="js/qrious.min.js"></script>
+  </body>
+</html>
