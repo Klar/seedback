@@ -5,10 +5,12 @@ a {
 code {
   display: block;
   overflow-wrap: break-word;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 @media print {
-  h3, nav, input, button, textarea {
+  h4, nav, input, button, textarea {
     display: none;
   }
 }
