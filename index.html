@@ -10,7 +10,7 @@
   </head>
   <body>
       <h1><a href="index.html">Seedback</a></h1>
-      <h3>A seed or backup tool QR image generating site for a paper printout.</h3>
+      <h4>A seed or backup tool QR image generating site for a paper printout.</h4>
       <nav>
         <ul>
           <li><h4><a href="index.html">encrypt</a></h4></li>
@@ -22,21 +22,11 @@
       <button onclick="setEncryption(this);return false;">Set</button>
       </br>
 
-      <h3 id="encrypt">encrypt</h3>
-      <textarea rows="9" cols="51" onInput="generateQr(event)"></textarea>
-      <canvas></canvas><code></code>
-
-      <textarea rows="9" cols="51" onInput="generateQr(event)"></textarea>
-      <canvas></canvas><code></code>
-
-      <textarea rows="9" cols="51" onInput="generateQr(event)"></textarea>
-      <canvas></canvas><code></code>
-
-      <textarea rows="9" cols="51" onInput="generateQr(event)"></textarea>
-      <canvas></canvas><code></code>
-
-      <textarea rows="9" cols="51" onInput="generateQr(event)"></textarea>
-      <canvas></canvas><code></code>
+      <h4 id="encrypt">encrypt</h4>
+      <button type="button" name="button" onclick="addQRInput('dynamicInput')">Add QR textarea</button>
+      </br></br>
+      <div id="dynamicInput">
+      </div>
 
       <script src="js/aes.js"></script>
       <script src="js/global.js"></script>

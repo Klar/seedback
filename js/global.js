@@ -32,6 +32,17 @@ function generateQr(event) {
   codeBlock.innerText = valuetext;
 };
 
+function addQRInput(divName){
+  var newdiv = document.createElement('div');
+  newdiv.innerHTML = '<input placeholder="QR Text Definition" type="text" onInput="qrheader(event)"/> <h3></h3> <textarea rows="9" cols="51" onInput="generateQr(event)"></textarea><canvas></canvas><code></code>';
+  document.getElementById(divName).appendChild(newdiv);
+};
+
+function qrheader(event){
+  data = event.target.value;
+  event.target.nextElementSibling.innerText = data;
+};
+
 function decryptText(event){
   data = event.target.value;
   decrypted = aesDecrypt(data);
