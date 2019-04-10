@@ -14,7 +14,7 @@ code {
 }
 
 @media print {
-  h4, nav, input, button, textarea {
+  h4, nav, br, input, button, textarea {
     display: none;
   }
 }
