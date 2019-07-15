@@ -4,6 +4,7 @@ localStorage.clear();
 
 function setEncryption(){
   localStorage['aeskey'] = document.getElementById("password").value;
+  alert("key set")
 };
 
 function aesEncrypt(data){
