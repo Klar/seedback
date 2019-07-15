@@ -1,5 +1,30 @@
 body{
   font-family: Sans-Serif;
+  background-color: #38CB7C;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+h1{
+  text-align: center;
+}
+
+li{
+  font-size: 1.11em;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+.box{
+  display: block;
+  background-color: #efefef;
+  margin: 5px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  box-shadow: 0 12px 12px 0 rgba(0,0,0,0.5), 0 12px 24px 0 rgba(0,0,0,0.5);
 }
 
 a {
@@ -14,7 +39,7 @@ code {
 }
 
 @media print {
-  h4, nav, br, input, button, textarea {
+  h4, nav, br, input, button, textarea, ul {
     display: none;
   }
 }

@@ -9,12 +9,13 @@
 
   </head>
   <body>
+    <div class="box">
       <h1><a href="index.html">Seedback</a></h1>
       <h4>A seed or backup tool QR image generating site for a paper printout.</h4>
       <nav>
         <ul>
-          <li><h4><a href="index.html">encrypt</a></h4></li>
-          <li><h4><a href="decrypt.html">decrypt</a></li>
+          <li><a href="index.html">encrypt</a></li>
+          <li><a href="decrypt.html">decrypt</a></li>
         </ul>
       </nav>
 
@@ -26,8 +27,9 @@
       <textarea rows="9" cols="51" onInput="decryptText(event)"></textarea>
       <code></code>
 
-      <script src="js/aes.js"></script>
-      <script src="js/global.js"></script>
-      <script src="js/qrious.min.js"></script>
+    </div>
+    <script src="js/aes.js"></script>
+    <script src="js/global.js"></script>
+    <script src="js/qrious.min.js"></script>
   </body>
 </html>
