@@ -38,8 +38,20 @@ code {
   padding-bottom: 10px;
 }
 
+@page {
+  size: auto;
+  margin: 0mm;  
+}
+
 @media print {
   h4, nav, br, input, button, textarea, ul {
     display: none;
+  }
+  body{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .box{
+    box-shadow: none;
   }
 }
